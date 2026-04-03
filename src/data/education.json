@@ -1,16 +1,25 @@
 [
     {
-      "school": "University of California, Berkeley",
-      "degree": "Bachelor of Science in Computer Science",
-      "location": "Berkeley, CA",
-      "dates": "2020-2024",
-      "activities": ["Leader of the Computer Science Club", "Volunteer at the local library"]
+      "school": "National University of Singapore",
+      "degree": "Bachelor in Computer Science",
+      "location": "Singapore",
+      "dates": "2022-2026",
+      "activities": [
+        "GPA: 4.44/5.00",
+        "Pioneer Elections Committee of Acacia College's 1st Student Committee",
+        "Elections Committee of CAPT's 14th Student Committee",
+        "External Vice Director of CAPT's 12th Sports Committee"
+        ]
     },
     {
-      "school": "University of California, Berkeley",
-      "degree": "Bachelor of Science in Computer Science",
-      "location": "Berkeley, CA",
-      "dates": "2020-2024",
-      "activities": ["Leader of the Computer Science Club", "Volunteer at the local library"]
+      "school": "Anglo-Chinese School (Independent)",
+      "degree": "International Baccalaureate Diploma",
+      "location": "Singapore",
+      "dates": "2018-2021",
+      "activities": [
+        "Grade: 44/45",
+        "Deans List (Top 10%) HL Physics, HL Mathematics, HL Chemistry",
+        "Bass Section Leader of ACS(I) Guitar Orchestra"
+        ]
     }
 ]

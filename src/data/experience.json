@@ -1,23 +1,34 @@
 [
     {
-      "company": "Google",
-      "title": "Software Engineer",
-      "location": "Mountain View, CA",
-      "dates": "2020-2024",
-      "descriptions": ["Developed and maintained web applications using React and Node.js", "Collaborated with a team of developers to build a new feature"]
+      "company": "GIC",
+      "title": "Software Engineer Intern",
+      "location": "Singapore",
+      "dates": "May 2025 - Aug 2025",
+      "descriptions": [
+        "Built internal tool to process and validate large-scale Excel-based data ingestion configurations",
+        "Implemented bulk import/export and error validation pipelines, reducing ops feedback time by 95%",
+        "Prototyped an AI-assisted data onboarding workflow that transforms data dictionaries into SQL schemas and config files to reduce onboarding time"
+      ]
     },
     {
-      "company": "Google",
-      "title": "Software Engineer",
-      "location": "Mountain View, CA",
-      "dates": "2020-2024",
-      "descriptions": ["Developed and maintained web applications using React and Node.js", "Collaborated with a team of developers to build a new feature"]
+      "company": "Kyberlife",
+      "title": "Full Stack Developer Intern",
+      "location": "Singapore",
+      "dates": "May 2024 - Aug 2024",
+      "descriptions": [
+        "Refactored redundant legacy components to enhance scalability and maintainability",
+        "Implemented end-to-end a comprehensive referral system to support Kyberlife’s growing user base of over 150 registered institutional and business users",
+        "Assisted in ad-hoc ideations and aspects of technology between the business and technology teams"
+      ]
     },
     {
-      "company": "Google",
-      "title": "Software Engineer",
-      "location": "Mountain View, CA",
-      "dates": "2020-2024",
-      "descriptions": ["Developed and maintained web applications using React and Node.js", "Collaborated with a team of developers to build a new feature"]
+      "company": "HomePal",
+      "title": "Full Stack Developer Intern",
+      "location": "Singapore",
+      "dates": "Jul 2023 - Dec 2023",
+      "descriptions": [
+        "Streamlined the data labeling workflow for machine learning training by migrating HomepalSG’s internal software from Tkinter to Dash, resolving maintenance issues with custom-built components and improving developer productivity.",
+        "Optimized data storage and retrieval by transitioning from CSV files to Parquet format, reducing storage space and improving processing efficiency for large datasets used for fall detection model training."
+      ]
     }
 ]

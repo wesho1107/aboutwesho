@@ -13,11 +13,24 @@ export default function ProjectsPage() {
         </p>
       </section>
       <section className="grid gap-y-4">
-        {/* Bento box of projects to showcase */}
+        {/* TODO: Bento box of projects to showcase */}
+        <div className="flex justify-between items-center">
+          <h2 className="font-medium">Projects</h2>
+          <a href="/projects" className="text-xs text-zinc-500 hover:underline">View all </a>
+        </div>
+        <ul className="grid gap-y-4">
+          {allProjects.map((project, index) => (
+            <li key={`${project.name}-${project.year}-${index}`} className="flex text-xs text-zinc-600">
+                <p>
+                  <span className="font-medium">{project.year} — <a href={project.link} className="hover:underline" target="_blank" rel="noopener noreferrer">{project.name}</a></span>: {project.description} 
+                </p>
+            </li>
+          ))}
+        </ul>
       </section>
-      <section className="grid gap-y-4">
+      {/* <section className="grid gap-y-4">
         <h2 className="font-medium">Project Ideas</h2>
-      </section>
+      </section> */}
     </div>
   )
 }

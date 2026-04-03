@@ -1,58 +1,72 @@
 [
     {
-      "name": "Project 1",
-      "year": "2020",
-      "description": "Description of Project 1",
-      "link": "https://www.project1.com",
+      "name": "Matcha Price",
+      "year": "2026",
+      "description": "TinyFish x OpenAI hackathon app that compares the prices of different matcha products from different countries",
+      "link": "https://github.com/wesho1107/tinyfish-hackathon",
       "featured": true
     },
     {
-      "name": "Project 2",  
-      "year": "2021",
-      "description": "Description of Project 2",
-      "link": "https://www.project2.com",
-      "featured": false
-    },
-    {
-      "name": "Project 3",
-      "year": "2022",
-      "description": "Description of Project 3",
-      "link": "https://www.project3.com",
-      "featured": false
-    },
-    {
-      "name": "Project 4",
-      "year": "2023",
-      "description": "Description of Project 4",
-      "link": "https://www.project4.com",
-      "featured": false
-    },
-    {
-      "name": "Project 5",
-      "year": "2024",
-      "description": "Description of Project 5",
-      "link": "https://www.project5.com",
+      "name": "Botanist",
+      "year": "2026",
+      "description": "Google ADK Agent built to automate research for horticultural information on plants",
+      "link": "https://github.com/wesho1107/botanist",
       "featured": true
     },
     {
-      "name": "Project 6",
+      "name": "About Wesho", 
+      "year": "2026",
+      "description": "Personal website built with Next.js and Tailwind CSS",
+      "link": "https://github.com/wesho1107/aboutwesho",
+      "featured": true
+    },
+    {
+      "name": "BananaWrapped",
       "year": "2025",
-      "description": "Description of Project 6",
-      "link": "https://www.project6.com",
+      "description": "Next.js application that creates a 2025 wrapped with Google's Nano Banana",
+      "link": "https://github.com/wesho1107/bananawrapped",
       "featured": true
     },
     {
-      "name": "Project 7",
-      "year": "2026",
-      "description": "Description of Project 7",
-      "link": "https://www.project7.com",
-      "featured": false
+      "name": "AskCAPTElections",
+      "year": "2025",
+      "description": "RAG application built to answer questions about the CAPT's elections",
+      "link": "https://github.com/wesho1107/askcaptelections",
+      "featured": true
     },
     {
-      "name": "Project 8",
-      "year": "2026",
-      "description": "Description of Project 8",
-      "link": "https://www.project8.com",
+      "name": "PeerPrep",
+      "year": "2024", 
+      "description": "LeetCode-style interview preparation platform built with microservices architecture for students to do pair programming with their peers",
+      "link": "https://github.com/wesho1107/peerprep",
+      "featured": true
+    },
+    {
+      "name": "PeerPrep",
+      "year": "2024", 
+      "description": "LeetCode-style interview preparation platform built with microservices architecture for students to do pair programming with their peers",
+      "link": "https://github.com/wesho1107/peerprep",
+      "featured": true
+    },
+    {
+      "name": "MLBB",
+      "year": "2024", 
+      "description": "TikTok hackathon project that simplifies data preprocessing and model training tasks",
+      "link": "https://github.com/wesho1107/mlbb",
+      "featured": true
+    },
+    {
+      "name": "TokiToki",
+      "year": "2025", 
+      "description": "iOS turn-based game built with Swift using MVVM architecture and Storyboard",
+      "link": "https://github.com/cs3217-2425/group-project-tokitoki",
+      "featured": true
+    },
+    {
+      "name": "CAPTCHA Model",
+      "year": "2025",
+      "description": "Group homework project built to identify and generate CAPTCHA images",
+      "link": "https://github.com/wesho1107/captcha-model",
       "featured": true
     }
   ]

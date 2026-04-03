@@ -35,7 +35,7 @@ const ExperienceItem = ({ company, title, location, dates, descriptions }: Exper
           </p>
           <ul className="mt-2 list-disc list-inside">
             {descriptions.map((description) => (
-              <li key={description} className="text-xs text-zinc-600">{description}</li>
+              <li key={description} className="mb-2 text-xs text-zinc-600 max-w-3xl">{description}</li>
             ))}
           </ul>
         </div>
@@ -98,13 +98,12 @@ export default function ResumePage() {
           <h2 className="font-medium">Projects</h2>
           <a href="/projects" className="text-xs text-zinc-500 hover:underline">View all </a>
         </div>
-        <ul className="grid gap-y-2">
+        <ul className="grid gap-y-4">
           {featuredProjects.map((project, index) => (
             <li key={`${project.name}-${project.year}-${index}`} className="flex text-xs text-zinc-600">
-                <p className="font-medium">
-                  {project.year} — <a href={project.link} className="hover:underline" target="_blank" rel="noopener noreferrer">{project.name}</a>
+                <p>
+                  <span className="font-medium">{project.year} — <a href={project.link} className="hover:underline" target="_blank" rel="noopener noreferrer">{project.name}</a></span>: {project.description} 
                 </p>
-                : {project.description}
             </li>
           ))}
         </ul>
