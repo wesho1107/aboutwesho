@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import React from 'react'
 
 const sampleNavItems = [
@@ -21,11 +24,25 @@ type NavItemProps = Readonly<{
   href: string
 }>
 
-function CircleNavItem({ item }: { item: NavItemProps }) {
+function CircleNavItem({
+  item,
+  pathname
+}: {
+  item: NavItemProps
+  pathname: string
+}) {
+  const isActive = pathname === item.href
+
   return (
-    <li key={item.href}>
-      <Link className="text-zinc-500 hover:text-zinc-900 hover:bg-zinc-200 py-1 px-2 rounded-full transition-colors" 
-        href={item.href} key={item.label}>
+    <li>
+      <Link
+        className={
+          isActive
+            ? 'font-medium py-1 px-2 rounded-full transition-colors'
+            : 'text-zinc-500 hover:text-zinc-800 py-1 px-2 rounded-full transition-colors'
+        }
+        href={item.href}
+      >
         {item.label}
       </Link>
     </li>
@@ -33,10 +50,12 @@ function CircleNavItem({ item }: { item: NavItemProps }) {
 }
 
 export function NavLinks() {
+  const pathname = usePathname()
+
   return (
-    <ul className="text-xs flex flex-wrap gap-x-2 border rounded-full p-2">
+    <ul className="text-sm flex flex-wrap gap-x-2 border rounded-full py-2 px-[0.4rem]">
       {sampleNavItems.map((item) => (
-        <CircleNavItem key={item.label} item={item} />
+        <CircleNavItem key={item.label} item={item} pathname={pathname} />
       ))}
     </ul>
   )

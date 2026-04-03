@@ -14,7 +14,7 @@
       "featured": true
     },
     {
-      "name": "About Wesho", 
+      "name": "aboutwesho", 
       "year": "2026",
       "description": "Personal website built with Next.js and Tailwind CSS",
       "link": "https://github.com/wesho1107/aboutwesho",

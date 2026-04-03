@@ -8,7 +8,7 @@ type RightItemProps = Readonly<{
 export function Header({ rightItem }: RightItemProps) {
   return (
     <header className="flex flex-1 mb-4 items-center justify-between">
-        <Link href="/" className="text-xl font-medium">Wesley Ho</Link>
+        <Link href="/" className="text-2xl font-bold">aboutwesho</Link>
         {rightItem}
     </header>
   )

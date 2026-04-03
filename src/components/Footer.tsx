@@ -11,12 +11,12 @@ const FooterLinks = () => {
           href={item.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs text-zinc-500 hover:text-zinc-600"
+          className="text-md text-zinc-500 hover:text-zinc-600"
         >
-          {item.icon === 'linkedin' && <FaLinkedin className="w-4 h-4" />}
-          {item.icon === 'github' && <FaGithub className="w-4 h-4" />}
-          {item.icon === 'email' && <FaEnvelope className="w-4 h-4" />}
-          {item.icon === 'telegram' && <FaTelegram className="w-4 h-4" />}
+          {item.icon === 'linkedin' && <FaLinkedin className="w-6 h-6" />}
+          {item.icon === 'github' && <FaGithub className="w-6 h-6" />}
+          {item.icon === 'email' && <FaEnvelope className="w-6 h-6" />}
+          {item.icon === 'telegram' && <FaTelegram className="w-6 h-6" />}
         </a>
       ))}
     </div>
@@ -28,7 +28,7 @@ export function Footer() {
     <footer className="pt-12 grid gap-y-4">
       <hr />
       <div className="flex justify-between">
-        <span className="text-xs text-zinc-600">
+        <span className="text-md text-zinc-600">
           {new Date().getFullYear()} © Wesley Ho Jia Cheng
         </span>
         <FooterLinks />

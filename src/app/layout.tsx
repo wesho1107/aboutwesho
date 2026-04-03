@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Roboto_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Roboto_Mono, Lato, Noto_Sans } from "next/font/google";
 import "../styles/globals.css";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
@@ -21,6 +21,18 @@ const robotoMono = Roboto_Mono({
   subsets: ["latin"],
 });
 
+const lato = Lato({
+  variable: "--font-lato",
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700", "900"],
+});
+
+const notoSans = Noto_Sans({
+  variable: "--font-noto-sans",
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700", "900"],
+});
+
 export const metadata: Metadata = {
   title: "wesho",
   description: "About Wesley Ho",
@@ -34,7 +46,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${robotoMono.variable}`}
+      className={`${geistSans.variable} ${geistMono.variable} ${robotoMono.variable} ${lato.variable} ${notoSans.variable}`}
     >
       <body>
         <Container>
