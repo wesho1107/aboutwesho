@@ -68,6 +68,8 @@ const EducationItem = ({ school, degree, location, dates, activities }: Educatio
 }
 
 export default function ResumePage() {
+  let featuredProjects = projectItems.filter((project) => project.featured).sort((a, b) => b.year.localeCompare(a.year));
+
   return (
     <div className="flex flex-col gap-y-12">
       <section className="grid gap-y-4">
@@ -97,7 +99,7 @@ export default function ResumePage() {
           <a href="/projects" className="text-xs text-zinc-500 hover:underline">View all </a>
         </div>
         <ul className="grid gap-y-2">
-          {projectItems.filter((project) => project.featured).map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <li key={`${project.name}-${project.year}-${index}`} className="flex text-xs text-zinc-600">
                 <p className="font-medium">
                   {project.year} — <a href={project.link} className="hover:underline" target="_blank" rel="noopener noreferrer">{project.name}</a>

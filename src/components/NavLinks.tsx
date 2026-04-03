@@ -3,7 +3,7 @@ import React from 'react'
 
 const sampleNavItems = [
   {
-    label: 'Blog',
+    label: 'About',
     href: '/'
   },
   {
