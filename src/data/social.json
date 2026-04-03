@@ -1,0 +1,26 @@
+{
+    "linkedin": {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/wesleyhojiacheng/",
+        "icon": "linkedin",
+        "tag": "wesleyhojiacheng"
+    },
+    "github": {
+        "label": "GitHub",
+        "url": "https://www.github.com/wesho1107/",
+        "icon": "github",
+        "tag": "wesho1107"
+    },
+    "email": {
+        "label": "Email",
+        "url": "mailto:wesho1107@gmail.com",
+        "icon": "email",
+        "tag": "wesho1107"
+    },
+    "telegram": {
+        "label": "Telegram",
+        "url": "https://t.me/notwesho",
+        "icon": "telegram",
+        "tag": "notwesho"
+    }
+}
