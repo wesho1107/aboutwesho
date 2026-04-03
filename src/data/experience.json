@@ -1,0 +1,23 @@
+[
+    {
+      "company": "Google",
+      "title": "Software Engineer",
+      "location": "Mountain View, CA",
+      "dates": "2020-2024",
+      "descriptions": ["Developed and maintained web applications using React and Node.js", "Collaborated with a team of developers to build a new feature"]
+    },
+    {
+      "company": "Google",
+      "title": "Software Engineer",
+      "location": "Mountain View, CA",
+      "dates": "2020-2024",
+      "descriptions": ["Developed and maintained web applications using React and Node.js", "Collaborated with a team of developers to build a new feature"]
+    },
+    {
+      "company": "Google",
+      "title": "Software Engineer",
+      "location": "Mountain View, CA",
+      "dates": "2020-2024",
+      "descriptions": ["Developed and maintained web applications using React and Node.js", "Collaborated with a team of developers to build a new feature"]
+    }
+]

@@ -1,96 +1,8 @@
 import React from 'react'
 
-const sampleExperienceItems = [
-  {
-    company: 'Google',
-    title: 'Software Engineer',
-    location: 'Mountain View, CA',
-    dates: '2020-2024',
-    descriptions: ['Developed and maintained web applications using React and Node.js', 'Collaborated with a team of developers to build a new feature'],
-  },
-  {
-    company: 'Google',
-    title: 'Software Engineer',
-    location: 'Mountain View, CA',
-    dates: '2020-2024',
-    descriptions: ['Developed and maintained web applications using React and Node.js', 'Collaborated with a team of developers to build a new feature'],
-  },
-  {
-    company: 'Google',
-    title: 'Software Engineer',
-    location: 'Mountain View, CA',
-    dates: '2020-2024',
-    descriptions: ['Developed and maintained web applications using React and Node.js', 'Collaborated with a team of developers to build a new feature'],
-  }
-]
-
-const sampleEducationItems = [
-  {
-    school: 'University of California, Berkeley',
-    degree: 'Bachelor of Science in Computer Science',
-    location: 'Berkeley, CA',
-    dates: '2020-2024',
-    activities: ['Leader of the Computer Science Club', 'Volunteer at the local library'],
-  },
-  {
-    school: 'University of California, Berkeley',
-    degree: 'Bachelor of Science in Computer Science',
-    location: 'Berkeley, CA',
-    dates: '2020-2024',
-    activities: ['Leader of the Computer Science Club', 'Volunteer at the local library'],
-  },
-]
-
-const sampleProjectItems = [
-  {
-    name: 'Project 1',
-    year: '2020',
-    description: 'Description of Project 1',
-    link: 'https://www.project1.com',
-  },
-  {
-    name: 'Project 2',  
-    year: '2021',
-    description: 'Description of Project 2',
-    link: 'https://www.project2.com',
-  },
-  {
-    name: 'Project 3',
-    year: '2022',
-    description: 'Description of Project 3',
-    link: 'https://www.project3.com',
-  },
-  {
-    name: 'Project 4',
-    year: '2023',
-    description: 'Description of Project 4',
-    link: 'https://www.project4.com',
-  },
-  {
-    name: 'Project 5',
-    year: '2024',
-    description: 'Description of Project 5',
-    link: 'https://www.project5.com',
-  },
-  {
-    name: 'Project 6',
-    year: '2025',
-    description: 'Description of Project 6',
-    link: 'https://www.project6.com',
-  },
-  {
-    name: 'Project 7',
-    year: '2026',
-    description: 'Description of Project 7',
-    link: 'https://www.project7.com',
-  },
-  {
-    name: 'Project 8',
-    year: '2026',
-    description: 'Description of Project 8',
-    link: 'https://www.project8.com',
-  },
-]
+import educationItems from '@/src/data/education.json'
+import experienceItems from '@/src/data/experience.json'
+import projectItems from '@/src/data/projects.json'
 
 type ExperienceItemProps = Readonly<{
   company: string
@@ -106,13 +18,6 @@ type EducationItemProps = Readonly<{
   location: string
   dates: string
   activities: string[]
-}>
-
-type ProjectItemProps = Readonly<{
-  name: string
-  year: string
-  description: string
-  link: string
 }>
 
 const ExperienceItem = ({ company, title, location, dates, descriptions }: ExperienceItemProps) => {
@@ -173,29 +78,32 @@ export default function ResumePage() {
       <section className="grid gap-y-4">
         <h2 className="font-medium">Experience</h2>
         <div className="grid gap-y-8">
-          {sampleExperienceItems.map((experience) => (
-            <ExperienceItem key={experience.company} {...experience} />
+          {experienceItems.map((experience, index) => (
+            <ExperienceItem key={`${experience.company}-${experience.title}-${experience.dates}-${index}`} {...experience} />
           ))}
         </div>
       </section>
       <section className="grid gap-y-4">
         <h2 className="font-medium">Education</h2>
         <div className="grid gap-y-8">
-          {sampleEducationItems.map((education) => (
-            <EducationItem key={education.school} {...education} />
+          {educationItems.map((education, index) => (
+            <EducationItem key={`${education.school}-${education.degree}-${education.dates}-${index}`} {...education} />
           ))}
         </div>
       </section>
       <section className="grid gap-y-4">
-        <h2 className="font-medium">Projects</h2>
+        <div className="flex justify-between items-center">
+          <h2 className="font-medium">Projects</h2>
+          <a href="/projects" className="text-xs text-zinc-500 hover:underline">View all </a>
+        </div>
         <ul className="grid gap-y-2">
-          {sampleProjectItems.map((project) => (
-            <div className="flex text-xs text-zinc-600">
+          {projectItems.filter((project) => project.featured).map((project, index) => (
+            <li key={`${project.name}-${project.year}-${index}`} className="flex text-xs text-zinc-600">
                 <p className="font-medium">
                   {project.year} — <a href={project.link} className="hover:underline" target="_blank" rel="noopener noreferrer">{project.name}</a>
                 </p>
                 : {project.description}
-            </div>
+            </li>
           ))}
         </ul>
       </section>

@@ -1,0 +1,58 @@
+[
+    {
+      "name": "Project 1",
+      "year": "2020",
+      "description": "Description of Project 1",
+      "link": "https://www.project1.com",
+      "featured": true
+    },
+    {
+      "name": "Project 2",  
+      "year": "2021",
+      "description": "Description of Project 2",
+      "link": "https://www.project2.com",
+      "featured": false
+    },
+    {
+      "name": "Project 3",
+      "year": "2022",
+      "description": "Description of Project 3",
+      "link": "https://www.project3.com",
+      "featured": false
+    },
+    {
+      "name": "Project 4",
+      "year": "2023",
+      "description": "Description of Project 4",
+      "link": "https://www.project4.com",
+      "featured": false
+    },
+    {
+      "name": "Project 5",
+      "year": "2024",
+      "description": "Description of Project 5",
+      "link": "https://www.project5.com",
+      "featured": true
+    },
+    {
+      "name": "Project 6",
+      "year": "2025",
+      "description": "Description of Project 6",
+      "link": "https://www.project6.com",
+      "featured": true
+    },
+    {
+      "name": "Project 7",
+      "year": "2026",
+      "description": "Description of Project 7",
+      "link": "https://www.project7.com",
+      "featured": false
+    },
+    {
+      "name": "Project 8",
+      "year": "2026",
+      "description": "Description of Project 8",
+      "link": "https://www.project8.com",
+      "featured": true
+    }
+  ]

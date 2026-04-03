@@ -1,0 +1,16 @@
+[
+    {
+      "school": "University of California, Berkeley",
+      "degree": "Bachelor of Science in Computer Science",
+      "location": "Berkeley, CA",
+      "dates": "2020-2024",
+      "activities": ["Leader of the Computer Science Club", "Volunteer at the local library"]
+    },
+    {
+      "school": "University of California, Berkeley",
+      "degree": "Bachelor of Science in Computer Science",
+      "location": "Berkeley, CA",
+      "dates": "2020-2024",
+      "activities": ["Leader of the Computer Science Club", "Volunteer at the local library"]
+    }
+]
