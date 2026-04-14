@@ -25,7 +25,7 @@ const ExperienceItem = ({ company, title, location, dates, descriptions }: Exper
     <article>
       <div className="flex gap-4">
         {/* TODO: Add icon */}
-        <div className="rounded-full border shadow-sm w-8 h-8 flex justify-start items-start"/>
+        <div className="shrink-0 rounded-full border shadow-sm w-8 h-8 flex justify-start items-start"/>
         <div className="flex flex-col gap-y-1">
           <p className="text-md font-semibold text-zinc-800">
             {title} @ {company}
@@ -48,7 +48,7 @@ const EducationItem = ({ school, degree, location, dates, activities }: Educatio
   return (
     <article>
       <div className="flex gap-4">
-        <div className="rounded-full border shadow-sm w-8 h-8 flex justify-start items-start"/>
+        <div className="shrink-0 rounded-full border shadow-sm w-8 h-8 flex justify-start items-start"/>
         <div className="flex flex-col gap-y-1">
           <p className="text-md font-semibold text-zinc-800">
             {degree} @ {school}

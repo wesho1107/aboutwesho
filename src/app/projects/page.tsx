@@ -8,7 +8,6 @@ export default function ProjectsPage() {
 
   return (
     <div className="flex flex-col gap-y-8">
-
       <section className="grid gap-y-4 mt-8">
         <h1 className="text-4xl font-bold">What am I up to?</h1>
         <p className="text-md max-w-lg text-zinc-500">
