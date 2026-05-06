@@ -42,13 +42,6 @@
       "featured": true
     },
     {
-      "name": "PeerPrep",
-      "year": "2024", 
-      "description": "LeetCode-style interview preparation platform built with microservices architecture for students to do pair programming with their peers",
-      "link": "https://github.com/wesho1107/peerprep",
-      "featured": true
-    },
-    {
       "name": "MLBB",
       "year": "2024", 
       "description": "TikTok hackathon project that simplifies data preprocessing and model training tasks",
